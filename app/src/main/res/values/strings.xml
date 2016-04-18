@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InternHomework</string>
+    <string name="welcome">Welcome,</string>
+    <string name="full_name">Yuri Ramocan</string>
+    <string name="edit_message">Enter your favorite NBA team</string>
+    <string name="button_text">Submit</string>
+    <string name="response">That team sucks.</string>
+</resources>
