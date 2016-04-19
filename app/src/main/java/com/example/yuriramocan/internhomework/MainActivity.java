@@ -28,32 +28,28 @@ public class MainActivity extends AppCompatActivity {
         // Assign user input to team as string.
         String team = teamEditable.toString();
 
-        // Regex check if (down-cased) user input includes "pistons".
+        // RegEx check if (down-cased) user input includes "pistons".
         if (team.toLowerCase().matches("(the)?\\s?(detroit)?\\s?(pistons)$")) {
             arePistons = true;
-            display(arePistons);
+            openTeamActivity(team, arePistons);
         } else {
             arePistons = false;
-            display(arePistons);
+            openTeamActivity(team, arePistons);
         }
     }
 
-    private void display(boolean check) {
-        TextView welcome = (TextView) findViewById(R.id.welcome_message);
+    private void openTeamActivity(String team, boolean check) {
+        Intent intentTeamActivity = new Intent(MainActivity.this, TeamActivity.class);
         if (check) {
-            welcome.setText("TRUE");
+            // If check returns true (Pistons are favorite team) then pass string to TeamActivity.
+            intentTeamActivity.putExtra("response", "DEEEEETROOIIIIT\nBAASKETBAAAAL");
         } else {
-            welcome.setText("FALSE");
+            // If check returns false then tell user their team sucks.
+            intentTeamActivity.putExtra("response", "Sorry, but\n\n" + team.toUpperCase()
+                                        + "\n\nSuck.");
         }
+        startActivity(intentTeamActivity);
     }
-
-//    public void enterHome(View view) {
-//        Intent intent = new Intent(this, DisplayHomeActivity.class);
-//        EditText editText = (EditText) findViewById(R.id.editText);
-//        String message = editText.getText().toString();
-//        intent.putExtra(EXTRA_MESSAGE, message);
-//        startActivity(intent);
-//    }
 
 
 

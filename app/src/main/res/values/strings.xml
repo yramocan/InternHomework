@@ -4,5 +4,5 @@
     <string name="full_name">Yuri Ramocan</string>
     <string name="edit_message">Enter your favorite NBA team</string>
     <string name="button_text">Submit</string>
-    <string name="response">That team sucks.</string>
+    <string name="response">Sorry, but the ___ is a horrible team.</string>
 </resources>

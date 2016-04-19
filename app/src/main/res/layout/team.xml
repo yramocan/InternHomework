@@ -9,4 +9,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.yuriramocan.internhomework.TeamActivity">
 
+    <TextView
+        android:id="@+id/response_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textAlignment="center"
+        android:text=""
+        android:textSize="40sp"/>
+
 </RelativeLayout>
