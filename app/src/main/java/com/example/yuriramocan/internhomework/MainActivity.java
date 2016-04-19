@@ -4,10 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
-import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
 
 /*
  * Creator Name: Yuri Ramocan
@@ -16,8 +14,6 @@ import android.widget.TextView;
  * - This app tells you that your favorite NBA team sucks if it's not the Pistons.
  */
 public class MainActivity extends AppCompatActivity {
-    public final static String EXTRA_MESSAGE = "com.yuriramocan.internhomework.MESSAGE";
-
     public void submitTeam (View view) {
         Boolean arePistons;
 
