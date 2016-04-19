@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intentTeamActivity = new Intent(MainActivity.this, TeamActivity.class);
         if (check) {
             // If check returns true (Pistons are favorite team) then pass string to TeamActivity.
-            intentTeamActivity.putExtra("response", "DEEEEETROOIIIIT\nBAASKETBAAAAL");
+            intentTeamActivity.putExtra("response", "DEEEEETROOIIIIT\nBAASKETBAAALL");
         } else {
             // If check returns false then tell user their team sucks.
             intentTeamActivity.putExtra("response", "Sorry, but\n\n" + team.toUpperCase()
